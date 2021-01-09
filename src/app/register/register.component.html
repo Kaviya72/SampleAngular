@@ -1,0 +1,12 @@
+<p><b>User Registeration Form</b></p>
+<form #userForm="ngForm" (ngSubmit)=registerUser()>
+    <label>UserName:</label>
+    <input type="text" name="userName" [(ngModel)]=user.userName><br/>
+    <label>UserEmail:</label>
+    <input type="text" name="userEmail" [(ngModel)]=user.userEmail><br/>
+    <label>UserPassword:</label>
+    <input type="text" name="userPassword" [(ngModel)]=user.userPassword><br/>
+    <label>UserPhone:</label>
+    <input type="text" name="userPhone" [(ngModel)]=user.userPhone><br/>
+    <button type="submit">REGISTER</button>
+</form>

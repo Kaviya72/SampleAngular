@@ -1,0 +1,17 @@
+<p><b>Registered Users!</b></p>
+<table class="table border-dark">
+    <tr>
+        <th>User Id</th>
+        <th>User Name</th>
+        <th>User Email</th>
+        <th>User Password</th>
+        <th>User Phone</th>
+    </tr>
+    <tr *ngFor="let user of users;">
+        <td>{{user.userId}}</td>
+        <td>{{user.userName}}</td>
+        <td>{{user.userEmail}}</td>
+        <td>{{user.userPassword}}</td>
+        <td>{{user.userPhone}}</td>
+    </tr>
+</table>

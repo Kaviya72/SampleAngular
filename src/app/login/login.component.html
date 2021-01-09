@@ -1,0 +1,9 @@
+<div *ngIf=success>
+    Registeration Successful.Your Registeration number is {{regNo}}
+</div>
+<form #enrollForm="ngForm" (ngSubmit)="enrollment()">
+    <input type="date" name="enrollmentDate" [(ngModel)]="rDate"/><br>
+    <input type="number" name="userId" [(ngModel)]="enr.userId"/><br>
+    <input type="number" name="userId" [(ngModel)]="enr.courseId"/><br>
+    <button type="submit">Enroll</button>
+</form>

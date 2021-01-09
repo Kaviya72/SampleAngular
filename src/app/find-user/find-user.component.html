@@ -1,0 +1,28 @@
+<form #userForm="ngForm" (ngSubmit)=findUser() autocomplete="on">
+    <div>
+        <label>User Id:</label>
+        <input type="number" name="userId" required [(ngModel)]=user.userId><br/>
+    </div>
+    <div>
+        <input type="submit" value="SEARCH" />
+    </div>
+</form>
+<div *ngIf=showUser>
+    <p><b>User Details!</b></p>
+    <table>
+        <tr>
+            <th>User Id</th>
+            <th>User Name</th>
+            <th>User Email</th>
+            <th>User Password</th>
+            <th>User Phone</th>
+        </tr>
+        <tr>
+            <td>{{user.userId}}</td>
+            <td>{{user.userName}}</td>
+            <td>{{user.userEmail}}</td>
+            <td>{{user.userPassword}}</td>
+            <td>{{user.userPhone}}</td>
+        </tr>
+    </table>
+</div>
